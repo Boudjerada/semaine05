@@ -1,6 +1,3 @@
-//Selectionne les sous-catégories selon le choix de la catégorie
-let catValue = document.querySelector('.catValue');
-console.log(catValue.value);
 
 $(document).ready(function() {
 
@@ -19,12 +16,9 @@ $(document).ready(function() {
             var contenu = '<option value="">Choisir une catégorie</option>';
             
             $.each(data, function(key, val) {
-                if(val.cat_id === catValue.value){
-                    contenu += `<option value="${val.cat_id}" selected="selected">${val.cat_nom}</option>`;
-                }
-                else {
+                
                     contenu += `<option value="${val.cat_id}">${val.cat_nom}</option>`;
-                }
+                
             });
                                             
             $("#select1").html(contenu);
@@ -62,26 +56,3 @@ $(document).ready(function() {
 
 
 });
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

@@ -480,7 +480,7 @@ else {
                 
                 $this->load->view('jarditou/header/headerDetail',$aViewHeader);            
                 $this->load->view('jarditou/ajout');
-                $this->load->view('jarditou/footer/footer');
+                $this->load->view('jarditou/footer/footer2');
                 }
            
             else{ // La validation a réussi, nos valeurs sont bonnes, on peut insérer en base
@@ -556,7 +556,7 @@ else {
                     $this->db->delete('produits'); 
                     $this->load->view('jarditou/header/headerDetail',$aViewHeader);
                     $this->load->view('jarditou/ajout');
-                    $this->load->view('jarditou/footer/footer');
+                    $this->load->view('jarditou/footer/footer2');
                 }
                  else{ // Succès, on redirige sur la liste 
                      redirect("Pagination");
@@ -567,7 +567,7 @@ else {
         { // 1er appel de la page: affichage du formulaire 
            $this->load->view('jarditou/header/headerDetail',$aViewHeader);
            $this->load->view('jarditou/ajout');
-           $this->load->view('jarditou/footer/footer');
+           $this->load->view('jarditou/footer/footer2');
         }
     } // --ajout()
 

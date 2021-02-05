@@ -6,7 +6,7 @@ if  (isset ($_SESSION["status"])){
             <div class="col-12 d-flex justify-content-center">
                 <img src="<?php echo base_url("assets/images/".$produit->pro_id);?>" class="w-50" alt="Image responsive" title="<?=$produit->pro_id.".".$produit->pro_photo;?>" >
             </div>
-            <?php var_dump($this->session->id_cat)?>
+            
             <input type="hidden" value="<?php echo $this->session->id_cat;?>" class="catValue" >
             <?php echo form_open(); ?>
                 <div class="form-group">
