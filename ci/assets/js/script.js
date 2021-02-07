@@ -1,6 +1,5 @@
 //Selectionne les sous-catégories selon le choix de la catégorie
 let catValue = document.querySelector('.catValue');
-console.log(catValue.value);
 
 $(document).ready(function() {
 

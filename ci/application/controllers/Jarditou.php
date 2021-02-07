@@ -647,7 +647,7 @@ else {
             
             $this->load->view('jarditou/header/headerDetail',$aViewHeader);            
             $this->load->view('jarditou/modification', $aView);
-            $this->load->view('jarditou/footer/footer');
+            $this->load->view('jarditou/footer/footer1');
            }
            else
            { // La validation a réussi, nos valeurs sont bonnes, on peut modifier en base  
@@ -676,7 +676,7 @@ else {
             
            $this->load->view('jarditou/header/headerDetail',$aViewHeader);
            $this->load->view('jarditou/modification',$aView);
-           $this->load->view('jarditou/footer/footer');
+           $this->load->view('jarditou/footer/footer1');
         }
     } // -- modifier()
 
